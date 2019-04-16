@@ -1,4 +1,4 @@
-# Git
+# Git Mastering
 
 ## The Four Areas
 
@@ -64,3 +64,17 @@ git stash clear
 ```
 git log --graph --decorate --oneline
 ```
+
+## Git show
+
+```
+git show HEAD^^ # แสดง commit ถัดไป 2 commit นับจาก HEAD
+git show HEAD~2 # แสดง commit ถัดไป 2 commit นับจาก HEAD
+git show HEAD@{"1 month ago"}
+```
+
+## Git rebase
+
+## Git revert
+
+## Git cherry-pick

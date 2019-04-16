@@ -38,9 +38,9 @@ git commit -m "comment" # move somethink on Index to Repository
 ## Git reset
 
 ```
-git reset --hard # ย้ายไปจุด commit ที่เลือก และ copy all from Repository to Index & Working Area
-git reset --mixed # ย้ายไปจุด commit ที่เลือก และ copy all from Repository to Index
-git reset --soft # ย้ายไปจุด commit ไปที่ Repository
+git reset --hard {commit number} # ย้ายไปจุด commit ที่เลือก และ copy all from Repository to Index & Working Area
+git reset --mixed {commit number} # ย้ายไปจุด commit ที่เลือก และ copy all from Repository to Index
+git reset --soft {commit number} # ย้ายไปจุด commit ไปที่ Repository
 
 git reset HEAD # copy all from Repository to Index เป็นการทำให้ไฟล์ใน Index เท่ากันกับ Repository
 git reset --hard HEAD # copy all from Repository to Index เป็นการทำให้ไฟล์ใน Index, Working เท่ากันกับ Repository

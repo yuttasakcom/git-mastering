@@ -4,14 +4,16 @@
 
 - Stash
 - Working Area
-- Index
+- Staging Area or Index
 - Repository
 
 ## Git Dif
 
 ```
-git diff # compare Working Area <---> Index
-git diff --cached # compare Index <---> Repository
+git diff # comparing Working Area <---> Index
+git diff --cached # comparing Index <---> Repository
+git diff HEAD # comparing Working Area <---> Repository
+git diff {commit nummber} {commit number or HEAD} # comparing between commit
 ```
 
 ## Git add & Git rm
@@ -71,6 +73,12 @@ git log --graph --decorate --oneline
 git show HEAD^^ # แสดง commit ถัดไป 2 commit นับจาก HEAD
 git show HEAD~2 # แสดง commit ถัดไป 2 commit นับจาก HEAD
 git show HEAD@{"1 month ago"}
+```
+
+## Git merge <Automatic Merge>
+
+```
+git merge <branch> -m "comment"
 ```
 
 ## Git rebase
